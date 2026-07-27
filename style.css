@@ -181,72 +181,7 @@ nav ul li a:hover{
     color:#555;
     line-height:1.6;
 }
-/* Workshop Section */
 
-.workshop{
-    padding:80px 8%;
-    text-align:center;
-    background:#ffffff;
-}
-
-.workshop h2{
-    font-size:38px;
-    color:#222;
-    margin-bottom:20px;
-}
-
-.workshop-text{
-    max-width:750px;
-    margin:auto;
-    color:#666;
-    line-height:1.8;
-    margin-bottom:45px;
-}
-
-.workshop-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.workshop-card{
-    background:#f8f8f8;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
-    transition:.4s;
-}
-
-.workshop-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 15px 30px rgba(0,0,0,.2)
-}
-
-.workshop-card h3{
-    color:#d4a017;
-    margin-bottom:15px;
-}
-
-.workshop-card p{
-    color:#555;
-    line-height:1.6;
-}
-
-.workshop-btn{
-    display:inline-block;
-    margin-top:40px;
-    background:#d4a017;
-    color:#fff;
-    text-decoration:none;
-    padding:15px 35px;
-    border-radius:30px;
-    font-size:18px;
-    transition:.3s;
-}
-
-.workshop-btn:hover{
-    background:#f8f8f8;
-}
 /* CONTACT SECTION */
 
 .contact{
