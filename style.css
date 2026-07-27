@@ -1072,4 +1072,94 @@ nav{
     padding:15px 0;
 }
 
+    /* ===================================
+   MOBILE RESPONSIVE
+=================================== */
+
+@media screen and (max-width:768px){
+
+    /* Navbar */
+    nav{
+        padding:15px 20px;
+    }
+
+    .logo img{
+        height:60px;
+    }
+
+    /* Hero */
+    .hero{
+        height:85vh;
+    }
+
+    .hero-content{
+        padding:20px;
+    }
+
+    .hero-content h1{
+        font-size:32px;
+        line-height:1.2;
+    }
+
+    .hero-content p{
+        font-size:16px;
+        line-height:1.6;
+    }
+
+    .btn{
+        display:block;
+        width:100%;
+        max-width:260px;
+        margin:10px auto;
+        text-align:center;
+    }
+
+    /* Sections */
+
+    .about,
+    .gallery,
+    .services,
+    .workshop,
+    .contact,
+    .testimonials,
+    .achievements{
+        padding:60px 20px;
+    }
+
+    /* Grid */
+
+    .gallery-container,
+    .why-container,
+    .service-container,
+    .workshop-container,
+    .testimonial-container,
+    .achievement-container{
+        grid-template-columns:1fr;
+    }
+
+    /* Contact */
+
+    .contact-container,
+    .contact-page{
+        grid-template-columns:1fr;
+    }
+
+    iframe{
+        width:100%;
+        height:300px;
+    }
+
+    /* Footer */
+
+    .footer{
+        padding:40px 20px;
+    }
+
+    .footer-social{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
 }
