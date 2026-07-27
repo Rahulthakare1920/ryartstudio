@@ -1270,6 +1270,7 @@ color:#555;
     display:flex;
     list-style:none;
     gap:25px;
+    margin-left:auto;
 }
 
 @media(max-width:768px){
