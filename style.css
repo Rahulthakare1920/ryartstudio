@@ -320,56 +320,7 @@ nav ul li a:hover{
     color:#111;
 
 }
-/* Footer */
 
-.footer{
-    background:#111;
-    color:#fff;
-    text-align:center;
-    padding:40px 20px;
-}
-
-.footer h2{
-    font-size:32px;
-    margin-bottom:10px;
-    color:#ff9800;
-}
-
-.footer p{
-    margin:8px 0;
-}
-
-.footer-contact{
-    margin:20px 0;
-    line-height:2;
-}
-
-.footer-social{
-    margin:20px 0;
-}
-
-.footer-social a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.footer-social a:hover{
-    color:#ff9800;
-}
-
-.footer hr{
-    width:80%;
-    margin:25px auto;
-    border:1px solid #333;
-}
-
-.copyright{
-    color:#aaa;
-    font-size:14px;
-}
 /* ABOUT SECTION */
 
 .about{
