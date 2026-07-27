@@ -1250,3 +1250,58 @@ color:#555;
 .logo img:hover{
     transform:scale(1.05);
 }
+/* ===== Mobile Navigation ===== */
+
+.menu-toggle{
+    display:none;
+    flex-direction:column;
+    cursor:pointer;
+}
+
+.menu-toggle span{
+    width:28px;
+    height:3px;
+    background:#fff;
+    margin:4px 0;
+    transition:0.3s;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+@media(max-width:768px){
+
+nav{
+    position:relative;
+}
+
+.menu-toggle{
+    display:flex;
+}
+
+.nav-links{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#111;
+    flex-direction:column;
+    text-align:center;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease;
+    z-index:1000;
+}
+
+.nav-links.active{
+    max-height:400px;
+}
+
+.nav-links li{
+    padding:15px 0;
+}
+
+}
