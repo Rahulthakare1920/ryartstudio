@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     
     <meta charset="UTF-8">
@@ -24,7 +26,7 @@
 
     <link rel="icon" href="logo.png">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -32,33 +34,28 @@
 
     <nav>
 
-    <div class="logo">
-        <a href="index.html">
-            <img src="logo.png" alt="RY Art Studio Logo">
-        </a>
-    </div>
+<div class="logo">
+    <a href="index.html">
+        <img src="logo.png" alt="RY Art Studio Logo">
+    </a>
+</div>
 
-    <div class="menu-toggle" id="mobile-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <ul class="nav-links">
+    <ul>
 
         <li><a href="index.html">Home</a></li>
 
-        <li><a href="about.html">About</a></li>
+    <li><a href="about.html">About</a></li>
 
-        <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
 
-        <li><a href="services.html">Services & Workshops</a></li>
+    <li><a href="services.html">Services & Workshops</a></li>
 
-        <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html">Contact</a></li>
 
     </ul>
 
 </nav>
+
 <!-- Hero Slider Section -->
 
 <section class="hero">
@@ -161,37 +158,7 @@
     <span class="next">&#10095;</span>
 
 </div>
-</section><script>
-
-const slides = document.querySelectorAll(".slide");
-
-let currentSlide = 0;
-
-function showSlide(index){
-
-    slides.forEach(slide => {
-        slide.classList.remove("active");
-    });
-
-    slides[index].classList.add("active");
-
-}
-
-function nextSlide(){
-
-    currentSlide++;
-
-    if(currentSlide >= slides.length){
-        currentSlide = 0;
-    }
-
-    showSlide(currentSlide);
-
-}
-
-setInterval(nextSlide, 4000);
-
-</script>
+</section>
     <!-- Why Choose Us Section -->
 <section class="why-us">
 
@@ -231,84 +198,7 @@ setInterval(nextSlide, 4000);
     <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
 
 </a>
-</footer>
 
-
-
-const images = document.querySelectorAll(".gallery-item img");
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-const closeBtn = document.querySelector(".close");
-const nextBtn = document.querySelector(".next");
-const prevBtn = document.querySelector(".prev");
-
-let currentIndex = 0;
-
-// Open Image
-images.forEach((img, index) => {
-    img.addEventListener("click", () => {
-        currentIndex = index;
-        showImage();
-        lightbox.style.display = "flex";
-    });
-});
-
-function showImage() {
-    lightboxImg.src = images[currentIndex].src;
-    lightboxImg.alt = images[currentIndex].alt;
-}
-
-// Next Image
-nextBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    currentIndex = (currentIndex + 1) % images.length;
-    showImage();
-});
-
-// Previous Image
-prevBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    showImage();
-});
-
-// Close
-closeBtn.addEventListener("click", () => {
-    lightbox.style.display = "none";
-});
-
-// Click Outside to Close
-lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox) {
-        lightbox.style.display = "none";
-    }
-});
-
-// Keyboard Support
-document.addEventListener("keydown", (e) => {
-
-    if (lightbox.style.display === "flex") {
-
-        if (e.key === "ArrowRight") {
-            currentIndex = (currentIndex + 1) % images.length;
-            showImage();
-        }
-
-        if (e.key === "ArrowLeft") {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            showImage();
-        }
-
-        if (e.key === "Escape") {
-            lightbox.style.display = "none";
-        }
-    }
-
-});
-
-</script>
-
-</section>
 <!-- Footer -->
 
 <footer class="footer">
@@ -357,6 +247,6 @@ document.addEventListener("keydown", (e) => {
     </div>
 
 </footer>
-    <script src="js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
