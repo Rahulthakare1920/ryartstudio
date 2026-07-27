@@ -12,6 +12,12 @@ body{
     color:#fff;
 }
 
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
 /* NAVBAR */
 nav{
     display:flex;
