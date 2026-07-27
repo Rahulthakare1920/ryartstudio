@@ -1284,17 +1284,24 @@ nav{
 }
 
 .nav-links{
+    display:flex;
+    flex-direction:column;
     position:absolute;
     top:100%;
     left:0;
     width:100%;
     background:#111;
-    flex-direction:column;
     text-align:center;
+
     max-height:0;
     overflow:hidden;
+
     transition:max-height .4s ease;
-    z-index:1000;
+}
+
+.nav-links.active{
+    max-height:500px;
+
 }
 
 .nav-links.active{
