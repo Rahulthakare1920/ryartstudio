@@ -115,6 +115,10 @@ body
 
 <body>
 
+<div class="page-loader" id="pageLoader">
+    <div class="throbber"></div>
+</div>
+
 <nav>
 
     <div class="logo">
@@ -123,7 +127,13 @@ body
         </a>
     </div>
 
-    <ul>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul id="navMenu">
 
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -173,15 +183,7 @@ body
 
 <img src="images/Artwork14.jpg" onclick="openImage(this.src)">
 
-<img src="images/Artwork15.jpg" onclick="openImage(this.src)">
-
-<img src="images/Artwork16.jpeg" onclick="openImage(this.src)">
-
-<img src="images/Artwork17.jpg" onclick="openImage(this.src)">
-
-<img src="images/Artwork18.jpg" onclick="openImage(this.src)">
-
-<img src="images/Artwork19.jpg" onclick="openImage(this.src)">
+<img src="images/Artwork15.jpeg" onclick="openImage(this.src)">
 
 </div>
 
@@ -256,6 +258,8 @@ document.getElementById("lightbox").style.display="none";
 }
 
 </script>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
