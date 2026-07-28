@@ -1,12 +1,18 @@
 // ===== Page Loader =====
-document.addEventListener("DOMContentLoaded", () => {
+function hidePageLoader() {
     const loader = document.getElementById("pageLoader");
     if (loader) {
         setTimeout(() => {
             loader.classList.add("hidden");
         }, 300);
     }
-});
+}
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", hidePageLoader);
+} else {
+    hidePageLoader();
+}
 
 // ===== Mobile Hamburger Menu =====
 const hamburger = document.querySelector(".hamburger");
