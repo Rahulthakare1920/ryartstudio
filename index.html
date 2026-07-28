@@ -32,7 +32,11 @@
 </head>
 
 <body>
-<div class="throbber"></div>
+
+<div class="page-loader" id="pageLoader">
+    <div class="throbber"></div>
+</div>
+
     <nav>
 
     <div class="logo">
@@ -41,7 +45,13 @@
     </a>
 </div>
 
-    <ul>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul id="navMenu">
 
         <li><a href="index.html">Home</a></li>
 
@@ -223,6 +233,33 @@ setInterval(nextSlide, 4000);
         <div class="why-box">
             <h3>🚚 Safe Delivery</h3>
             <p>Secure packaging and safe delivery across India.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Testimonials Section -->
+<!-- NOTE for Rahul: replace these 3 placeholder quotes with real client/workshop feedback whenever you have some -->
+<section class="testimonials">
+
+    <h2>What Our Clients Say</h2>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+            <p>"The corporate wall art Rahul made for our office completely changed the reception area. Every visitor asks about it."</p>
+            <h3>— Corporate Client, Pune</h3>
+        </div>
+
+        <div class="testimonial-card">
+            <p>"We booked a family workshop for my daughter's birthday and everyone, from kids to grandparents, loved making their own string art."</p>
+            <h3>— Workshop Attendee</h3>
+        </div>
+
+        <div class="testimonial-card">
+            <p>"The custom portrait was more detailed and beautiful than we imagined. Truly a one-of-a-kind gift."</p>
+            <h3>— Happy Customer</h3>
         </div>
 
     </div>
