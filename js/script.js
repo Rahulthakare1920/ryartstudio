@@ -1,5 +1,5 @@
 // ===== Page Loader =====
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
     const loader = document.getElementById("pageLoader");
     if (loader) {
         setTimeout(() => {
@@ -11,7 +11,6 @@ window.addEventListener("load", () => {
 // ===== Mobile Hamburger Menu =====
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.getElementById("navMenu");
-
 if (hamburger && navMenu) {
     hamburger.addEventListener("click", () => {
         navMenu.classList.toggle("active");
@@ -21,14 +20,12 @@ if (hamburger && navMenu) {
 // ===== Hero Slider =====
 const slides = document.querySelectorAll(".slide");
 let currentSlide = 0;
-
 function showSlide(index) {
     slides.forEach(slide => {
         slide.classList.remove("active");
     });
     slides[index].classList.add("active");
 }
-
 function nextSlide() {
     currentSlide++;
     if (currentSlide >= slides.length) {
@@ -36,7 +33,6 @@ function nextSlide() {
     }
     showSlide(currentSlide);
 }
-
 if (slides.length > 0) {
     setInterval(nextSlide, 4000);
 }
@@ -48,9 +44,7 @@ const lightboxImg = document.getElementById("lightbox-img");
 const closeBtn = document.querySelector(".close");
 const nextBtn = document.querySelector(".next");
 const prevBtn = document.querySelector(".prev");
-
 let currentIndex = 0;
-
 if (lightbox) {
     images.forEach((img, index) => {
         img.addEventListener("click", () => {
@@ -59,34 +53,28 @@ if (lightbox) {
             lightbox.style.display = "flex";
         });
     });
-
     function showImage() {
         lightboxImg.src = images[currentIndex].src;
         lightboxImg.alt = images[currentIndex].alt;
     }
-
     nextBtn.addEventListener("click", (e) => {
         e.stopPropagation();
         currentIndex = (currentIndex + 1) % images.length;
         showImage();
     });
-
     prevBtn.addEventListener("click", (e) => {
         e.stopPropagation();
         currentIndex = (currentIndex - 1 + images.length) % images.length;
         showImage();
     });
-
     closeBtn.addEventListener("click", () => {
         lightbox.style.display = "none";
     });
-
     lightbox.addEventListener("click", (e) => {
         if (e.target === lightbox) {
             lightbox.style.display = "none";
         }
     });
-
     document.addEventListener("keydown", (e) => {
         if (lightbox.style.display === "flex") {
             if (e.key === "ArrowRight") {
