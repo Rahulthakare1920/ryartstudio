@@ -8,11 +8,9 @@ function hidePageLoader() {
     }
 }
 
-if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", hidePageLoader);
-} else {
+window.addEventListener("load", () => {
     hidePageLoader();
-}
+});
 
 // ===== Mobile Hamburger Menu =====
 const hamburger = document.querySelector(".hamburger");
