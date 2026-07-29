@@ -51,7 +51,7 @@ const closeBtn = document.querySelector(".close");
 const nextBtn = document.querySelector(".next");
 const prevBtn = document.querySelector(".prev");
 let currentIndex = 0;
-if (lightbox) {
+if (lightbox && lightboxImg && nextBtn && prevBtn && closeBtn) {
     images.forEach((img, index) => {
         img.addEventListener("click", () => {
             currentIndex = index;
