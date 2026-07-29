@@ -1,115 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta charset="UTF-8">
+    
+    <!-- Primary SEO -->
+<title>Ryart Creation | String Art Artist in Pune | Handmade String Art & Custom Portraits</title>
 
-<title>Gallery | Ryart Creation String Art Portfolio</title>
+<meta name="description" content="Ryart Creation by Rahul Thakare is a Pune-based String Artist creating handmade string art, custom portraits, wall décor, corporate gifts, and conducting creative workshops.">
 
-<meta name="description" content="Explore the handmade string art gallery of Rahul Thakare. View custom portraits, wall décor, artistic installations, and creative thread art projects by Ryart Creation.">
-
-<meta name="keywords" content="String Art Gallery, Ryart Creation Gallery, Rahul Thakare Portfolio, Handmade Thread Art, Custom Wall Art">
+<meta name="keywords" content="Ryart Creation, Rahul Thakare, String Art Pune, Handmade String Art, Custom Portrait, Thread Art, Wall Decor, String Art Workshop, Corporate Gifts">
 
 <meta name="author" content="Rahul Thakare">
 
 <meta name="robots" content="index, follow">
 
-<link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="icon" type="image/png" href="images/favicon.png">
 
-<style>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ryart Creation">
+    <meta property="og:description" content="Custom Handmade String Art Portraits, Wall Decor & Workshops.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:type" content="website">
 
-body
+    <link rel="icon" href="images/logo.png">
 
-    {
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f4f4;
-}
-
-.gallery-grid{
-
-    width:90%;
-    margin:50px auto;
-
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-    gap:25px;
-
-}
-
-.gallery-grid img{
-
-    width:100%;
-    height:300px;
-
-    object-fit:cover;
-
-    border-radius:12px;
-
-    cursor:pointer;
-
-    transition:.4s;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.2);
-
-}
-
-.gallery-grid img:hover{
-
-    transform:scale(1.05);
-
-}
-
-.lightbox{
-
-    display:none;
-
-    position:fixed;
-
-    top:0;
-    left:0;
-
-    width:100%;
-    height:100%;
-
-    background:rgba(0,0,0,.9);
-
-    justify-content:center;
-
-    align-items:center;
-
-    z-index:999;
-
-}
-
-.lightbox img{
-
-    max-width:90%;
-    max-height:90%;
-
-    border-radius:10px;
-
-}
-
-.close{
-
-    position:absolute;
-
-    top:20px;
-    right:35px;
-
-    font-size:45px;
-
-    color:white;
-
-    cursor:pointer;
-
-}
-
-</style>
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -119,13 +37,13 @@ body
     <div class="throbber"></div>
 </div>
 
-<nav>
+    <nav>
 
     <div class="logo">
-        <a href="index.html">
-            <img src="images/logo.png" alt="RY Art Studio Logo">
-        </a>
-    </div>
+    <a href="index.html">
+        <img src="images/logo.png" alt="RY Art Studio Logo">
+    </a>
+</div>
 
     <div class="hamburger">
         <span></span>
@@ -136,74 +54,314 @@ body
     <ul id="navMenu">
 
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="services.html">Services & Workshops</a></li>
-        <li><a href="contact.html">Contact</a></li>
+
+    <li><a href="about.html">About</a></li>
+
+    <li><a href="gallery.html">Gallery</a></li>
+
+    <li><a href="services.html">Services & Workshops</a></li>
+
+    <li><a href="contact.html">Contact</a></li>
 
     </ul>
 
 </nav>
 
-<div class="page-banner">
+<!-- Hero Slider Section -->
 
-<h1>Our Gallery</h1>
+<section class="hero">
 
-<p>Explore Handmade String Art Collection</p>
+    <div class="slides">
 
+        <img src="images/hero1.jpeg" class="slide active" alt="Artwork 1">
+        <img src="images/hero2.jpeg" class="slide" alt="Artwork 2">
+        <img src="images/hero3.jpg" class="slide" alt="Artwork 3">
+        <img src="images/hero4.jpg" class="slide" alt="Artwork 4">
+        <img src="images/hero5.jpeg" class="slide" alt="Artwork 5">
+
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>Every Thread Tells a Story.</h1>
+
+        <p>
+            Handmade String Art Creations Crafted with Passion &
+            Precision.
+        </p>
+
+        <a href="gallery.html" class="btn">View Gallery</a>
+
+        <a href="contact.html" class="btn btn2">Contact Me</a>
+
+    </div>
+
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery">
+    <h2>My String Art Collection</h2>
+
+    <div class="gallery-container">
+
+        <div class="gallery-item">
+            <img src="images/Artwork1.jpeg" alt="Chhatrapati Shivaji
+            Maharaj">
+            <div class="gallery-info">
+                <h3>Chhatrapati Shivaji Maharaj</h3>
+                <p>Handmade String Art Potrait</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Artwork2.jpeg" alt="Golden Spiral Geometry">
+            <div class="gallery-info">
+                <h3>Golden Spiral Geometry</h3>
+                <p>A Perfect Blend of Mathematics and Art</p>
+            </div>
+        </div>
+
+<div class="gallery-item">
+    <img src="images/Artwork3.jpg" alt="Modern Wall Art">
+
+    <div class="gallery-info">
+        <h3>Modern Wall Art</h3>
+        <p>Contemporary Geometric String Art</p>
+    </div>
 </div>
 
-<div class="gallery-grid">
+<div class="gallery-item">
+    <img src="images/Artwork4.jpeg" alt="Corporate Wall Art">
 
-<img src="images/Artwork1.jpeg" onclick="openImage(this.src)">
-
-<img src="images/Artwork2.jpeg" onclick="openImage(this.src)">
-
-<img src="images/Artwork3.jpg" onclick="openImage(this.src)">
-
-<img src="images/Artwork4.jpeg" onclick="openImage(this.src)">
-
-<img src="images/Artwork5.jpg" onclick="openImage(this.src)">
-
-<img src="images/Artwork6.jpeg" onclick="openImage(this.src)">
-
-<img src="images/Artwork7.jpeg" onclick="openImage(this.src)">
-
-<img src="images/Artwork8.jpeg" onclick="openImage(this.src)">
-
-<img src="images/Artwork9.jpeg" onclick="openImage(this.src)">
-
-<img src="images/Artwork10.jpeg" onclick="openImage(this.src)">
-
-<img src="images/Artwork11.jpeg" onclick="openImage(this.src)">
-
-<img src="images/Artwork12.jpeg" onclick="openImage(this.src)">
-
-<img src="images/Artwork13.jpg" onclick="openImage(this.src)">
-
-<img src="images/Artwork14.jpeg" onclick="openImage(this.src)">
-
-<img src="images/Artwork15.jpeg" onclick="openImage(this.src)">
-
+    <div class="gallery-info">
+        <h3>Corporate Wall Art</h3>
+        <p>Custom Office & Business Installation</p>
+    </div>
 </div>
 
-<div class="lightbox" id="lightbox">
+<div class="gallery-item">
+    <img src="images/Artwork5.jpg" alt="Award Winning Artwork">
 
-<span class="close" onclick="closeImage()">&times;</span>
-
-<img id="popup">
-
+    <div class="gallery-info">
+        <h3>Award Winning Artwork</h3>
+        <p>Recognized for Creativity & Precision</p>
+    </div>
 </div>
+
+<div class="gallery-item">
+    <img src="images/Artwork6.jpeg" alt="AHAM String Art">
+
+    <div class="gallery-info">
+        <h3>AHAM String Art</h3>
+        <p>Large Scale Artistic Installation</p>
+    </div>
+</div>
+
+    </div>
+    <!-- gallery-container closed here -->
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+
+        <span class="close">&times;</span>
+
+        <span class="prev">&#10094;</span>
+
+        <img id="lightbox-img" class="lightbox-content" alt="Artwork">
+
+        <span class="next">&#10095;</span>
+
+    </div>
+
+</section>
+
+<script>
+
+const slides = document.querySelectorAll(".slide");
+
+let currentSlide = 0;
+
+function showSlide(index){
+
+    slides.forEach(slide => {
+        slide.classList.remove("active");
+    });
+
+    slides[index].classList.add("active");
+
+}
+
+function nextSlide(){
+
+    currentSlide++;
+
+    if(currentSlide >= slides.length){
+        currentSlide = 0;
+    }
+
+    showSlide(currentSlide);
+
+}
+
+setInterval(nextSlide, 4000);
+
+</script>
+    <!-- Why Choose Us Section -->
+<section class="why-us">
+
+    <h2>Why Choose Ryart creation?</h2>
+
+    <div class="why-container">
+
+        <div class="why-box">
+            <h3>🧵 Handmade Craftsmanship</h3>
+            <p>Every artwork is carefully handcrafted with precision and passion.</p>
+        </div>
+
+        <div class="why-box">
+            <h3>🎨 Custom Designs</h3>
+            <p>Personalized string art made specially for your home, office or gifts.</p>
+        </div>
+
+        <div class="why-box">
+            <h3>🏆 Award Winning Artist</h3>
+            <p>Recognized for creativity, innovation and exceptional craftsmanship.</p>
+        </div>
+
+        <div class="why-box">
+            <h3>🚚 Safe Delivery</h3>
+            <p>Secure packaging and safe delivery across India.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Testimonials Section -->
+<!-- NOTE for Rahul: replace these 3 placeholder quotes with real client/workshop feedback whenever you have some -->
+<section class="testimonials">
+
+    <h2>What Our Clients Say</h2>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+            <p>"The corporate wall art Rahul made for our office completely changed the reception area. Every visitor asks about it."</p>
+            <h3>— Corporate Client, Pune</h3>
+        </div>
+
+        <div class="testimonial-card">
+            <p>"We booked a family workshop for my daughter's birthday and everyone, from kids to grandparents, loved making their own string art."</p>
+            <h3>— Workshop Attendee</h3>
+        </div>
+
+        <div class="testimonial-card">
+            <p>"The custom portrait was more detailed and beautiful than we imagined. Truly a one-of-a-kind gift."</p>
+            <h3>— Happy Customer</h3>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WhatsApp Floating Button -->
+
+<a href="https://wa.me/917875884779" class="whatsapp-float" target="_blank">
+
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+
+</a>
+
+<script src="js/script.js"></script>
+<script>
+
+const images = document.querySelectorAll(".gallery-item img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.querySelector(".close");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
+
+let currentIndex = 0;
+
+// Open Image
+images.forEach((img, index) => {
+    img.addEventListener("click", () => {
+        currentIndex = index;
+        showImage();
+        lightbox.style.display = "flex";
+    });
+});
+
+function showImage() {
+    lightboxImg.src = images[currentIndex].src;
+    lightboxImg.alt = images[currentIndex].alt;
+}
+
+// Next Image
+nextBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage();
+});
+
+// Previous Image
+prevBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage();
+});
+
+// Close
+closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+
+// Click Outside to Close
+lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+        lightbox.style.display = "none";
+    }
+});
+
+// Keyboard Support
+document.addEventListener("keydown", (e) => {
+
+    if (lightbox.style.display === "flex") {
+
+        if (e.key === "ArrowRight") {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage();
+        }
+
+        if (e.key === "ArrowLeft") {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage();
+        }
+
+        if (e.key === "Escape") {
+            lightbox.style.display = "none";
+        }
+    }
+
+});
+
+</script>
+
+<!-- Footer -->
 
 <footer class="footer">
 
     <div class="footer-content">
 
         <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.png" alt="RY Art Studio Logo">
-            </a>
-        </div>
+    <a href="index.html">
+        <img src="images/logo.png" alt="RY Art Studio Logo">
+    </a>
+</div>
 
         <p>Every Thread Tells a Story</p>
 
@@ -220,10 +378,15 @@ body
         <div class="footer-social">
 
             <a href="https://www.facebook.com/rahul.thakre.129357/" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/rahul_ryart.puneartist/?hl=en" target="_blank">Instagram</a>
-            <a href="https://in.pinterest.com/rahulthakare20/" target="_blank">Pinterest</a>
-            <a href="https://x.com/ryart_stringart" target="_blank">X (Twitter)</a>
-            <a href="https://www.youtube.com/@rahulthakare29" target="_blank">YouTube</a>
+
+    <a href="https://www.instagram.com/rahul_ryart.puneartist/?hl=en" target="_blank">Instagram</a>
+
+    <a href="https://in.pinterest.com/rahulthakare20/" target="_blank">Pinterest</a>
+
+    <a href="https://x.com/ryart_stringart" target="_blank">X (Twitter)</a>
+
+    <a href="https://www.youtube.com/@rahulthakare29" target="_blank">YouTube</a>
+            
 
         </div>
 
@@ -236,30 +399,5 @@ body
     </div>
 
 </footer>
-
-<a href="https://wa.me/917875884779" class="whatsapp-float" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-</a>
-
-<script>
-
-function openImage(img){
-
-document.getElementById("lightbox").style.display="flex";
-
-document.getElementById("popup").src=img;
-
-}
-
-function closeImage(){
-
-document.getElementById("lightbox").style.display="none";
-
-}
-
-</script>
-
-<script src="js/script.js"></script>
-
 </body>
 </html>
